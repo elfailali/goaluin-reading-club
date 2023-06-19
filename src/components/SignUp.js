@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import './SignUp.css'
 
 
 function SignUp() {
@@ -10,6 +11,7 @@ function SignUp() {
     const handleSubmit = (e) => {
         e.preventDefault(); // not refresh page after click submit
         const user = {name, email, password}
+        console.log(user)
 
         console.log('Name:', name);
         console.log('Email:', email);
@@ -26,7 +28,7 @@ function SignUp() {
                     required
                     value={name}
                     onChange={(e) => setName(e.target.value)}
-                /> <br />
+                /> 
                 <input
                     type="email"
                     placeholder="john@example.com"
@@ -34,7 +36,7 @@ function SignUp() {
                     value={email}
                     onChange={(e) => setEmail(e.target.value)}
                 />
-                <br />
+                
                 <input
                     type="password"
                     placeholder="Password"
@@ -42,7 +44,7 @@ function SignUp() {
                     value={password}
                     onChange={(e) => setPassword(e.target.value)}
                 />
-                <br />
+                
                 <button type="submit">Sign Up</button>
             </form>
         </div>
