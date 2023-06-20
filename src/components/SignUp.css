@@ -9,6 +9,7 @@ form{
     flex-direction: column;
     align-items: center;
     margin: auto;
+    gap: 10px;
 }
 
 input{

@@ -1,0 +1,30 @@
+.EditPost{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+textarea{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 16px 14px;
+
+    width: 363px;
+
+    background: #2C273F;
+    border-radius: 10px;
+
+
+    /* STYLE THE TEXT INSIDE INPUTS */
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+
+    color: #ABA2C7;
+
+    border: none;
+
+}
