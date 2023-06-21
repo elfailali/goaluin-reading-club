@@ -1,6 +1,6 @@
 import React from 'react';
 import './HomePage.css'
-// import { Link } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 
 function HomePage() {
   return (
@@ -9,9 +9,9 @@ function HomePage() {
         <div className='left-section'>
             <h3 className=''>Joining The Reading club</h3>
             <a href='/'>GET STARTED</a>
-            {/* <Link>
+            <Link to='/signUp'>
                 Get Started
-            </Link> */}
+            </Link>
         </div>
 
         <div className='right-section'>
