@@ -22,6 +22,10 @@
     margin: 10px;
     background-color: #1B1825 ;
 }
+.post > * >*{
+    margin: 10px;
+    background-color: #1B1825 ;
+}
 
 .title{
     font-family: 'Inter';
@@ -49,13 +53,44 @@ color: #FFFFFF;
 
 .date{
     font-family: 'Inter';
-font-style: normal;
-font-weight: 400;
-font-size: 12px;
-line-height: 15px;
-/* identical to box height */
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    /* identical to box height */
 
 
 color: #656469;
 
+}
+
+.head-post{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.trashIcon{
+    font-size: 20px;
+    color: #CF5959;
+    
+    /* background-color: #CF5959   ; */
+}
+
+
+
+.date-section{
+    display: flex;
+    flex-direction: row;
+    color: red;
+    /* background-color: red; */
+}
+
+.calendar-icon{
+    color: #1B1825;
+    size: 100px;
+}
+
+.no-post{
+    color: #656469;
 }

@@ -8,9 +8,8 @@ function HomePage() {
     <div className='homePage'>
         <div className='left-section'>
             <h3 className=''>Joining The Reading club</h3>
-            <a href='/'>GET STARTED</a>
-            <Link to='/signUp'>
-                Get Started
+            <Link to='/signup'>
+              GET STARTED
             </Link>
         </div>
 

@@ -1,8 +1,10 @@
 import React, { useState } from 'react'
 import './SignUp.css'
-
+import {useNavigate} from "react-router-dom"
 
 function SignUp() {
+
+    const navigate = useNavigate();
 
     const [name, setName] = useState('');
     const [email, setEmail] = useState('');
@@ -16,6 +18,9 @@ function SignUp() {
         console.log('Name:', name);
         console.log('Email:', email);
         console.log('Password:', password);
+
+        // history.push('/posts');
+        navigate("/posts")
     }
 
     return (
@@ -45,7 +50,7 @@ function SignUp() {
                     onChange={(e) => setPassword(e.target.value)}
                 />
                 
-                <button type="submit">Sign Up</button>
+                <button  type="submit">Sign Up</button>
             </form>
         </div>
       );

@@ -1,0 +1,15 @@
+
+*{
+    margin: 10px    ;
+}
+
+.NoPage{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    text-align: center;
+    align-items: center;
+}
+.text_404 {
+    font-size: 100px;
+  }
