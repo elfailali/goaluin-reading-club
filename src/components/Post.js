@@ -3,11 +3,14 @@ import React, { useState } from 'react';
 import './Post.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCalendar, faTrashCan } from '@fortawesome/free-solid-svg-icons'
+import { Link, Navigate } from 'react-router-dom';
+import EditPost from './EditPost';
+import {useNavigate} from "react-router-dom"
+
 
 function Post() {
 
-
-
+  const navigate = useNavigate();
   const [posts, setPosts] = useState([
     {
       id: 1,
@@ -41,6 +44,13 @@ const deletePost = (id) => {
   }
 };
   
+const addPost = (newPost) => {
+  const updatedPosts = [...posts, newPost];
+  setPosts(updatedPosts);
+
+  navigate("/posts")
+
+};
 
   // const [posts, setPosts] = useState([]);
   // useEffect(() => {
@@ -84,7 +94,9 @@ const deletePost = (id) => {
       
       }
       
+      <Link to='/newpost'>New Post</Link>
 
+      <EditPost addPost={addPost} />
       
     </div>
   )

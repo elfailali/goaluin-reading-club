@@ -1,7 +1,12 @@
-import { useState, React } from "react";
+import React, { useState } from "react";
 import './EditPost.css'
 
-function EditPost() {
+function EditPost(props) {
+
+
+  const addPost = props.addPost;
+
+  console.log(props, addPost)
 
   const [title, setTitle] = useState('');
     const [description, setDescription] = useState('');
@@ -9,8 +14,20 @@ function EditPost() {
     const handleSubmit = (e) => {
         e.preventDefault(); // not refresh page after click submit
 
-        console.log('Title:', title);
-        console.log('Description:', description);
+
+        // add post
+        const newPost = {
+          id: Date.now(),
+          title: title,
+          body: description,
+          date: new Date().toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' }),
+        };
+    
+        console.log('new post:', newPost);
+
+        addPost(newPost);
+
+        console.log('new post:', newPost);
     }
 
 
