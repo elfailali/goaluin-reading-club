@@ -1,3 +1,6 @@
+First version UI link:
+https://www.figma.com/file/NjxFGB4BQgXkMnbt1ZNgxc/assessment-Project?type=design&node-id=0-1&mode=design&t=Ch4d3lKBPw5KpvsB-0
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
